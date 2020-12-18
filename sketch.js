@@ -10,9 +10,9 @@ let coin;
 let particleSystem;
 
 function preload() {
-  boom = loadSound('assets/boom.wav');
-  dash = loadSound('assets/dash.wav');
-  coin = loadSound('assets/coin.wav')
+  boom = loadSound('boom.wav');
+  dash = loadSound('dash.wav');
+  coin = loadSound('coin.wav')
 }
 
 function setup() {
