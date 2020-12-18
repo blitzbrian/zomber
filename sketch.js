@@ -72,8 +72,7 @@ function draw() {
       } catch {
         clearInterval(interval);
         diff+=1;
-        setup()
-        ;
+        setup();
       }
     }
   }
@@ -95,6 +94,7 @@ function Player() {
     ellipse(this.x,this.y,50)
   }
   this.update = () => {
+    let playerSpeed = 2;
     if (keyIsDown(LEFT_ARROW) && this.x > 25) this.x-=this.speed;
     if (keyIsDown(RIGHT_ARROW) && this.x < (width - 25)) this.x+=this.speed;
     if (keyIsDown(UP_ARROW) && this.y > 25) this.y-=this.speed;
@@ -220,4 +220,4 @@ function ParticleSystem() {
   this.color = (r,g,b) => {
     return {r:r,g:g,b:b};
   }
-}
+} 
